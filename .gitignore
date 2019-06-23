@@ -1,0 +1,5 @@
+.vscode
+.gitattributes
+.vscodeignore
+vsc-extension-quickstart.md
+rrpg-sdk3-snippets-1.0.0.vsix

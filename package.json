@@ -1,0 +1,31 @@
+{
+    "name": "rrpg-sdk3-snippets",
+    "displayName": "RRPG SFK 3 Snippets",
+    "description": "RRPG Firecast SDK 3 Snippets criado por rafaelskate8",
+    "icon": "img/rrpglogo.png",
+    "version": "1.0.0",
+    "galleryBanner": {
+        "color": "#7159c1",
+        "theme": "dark"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "url github"
+    },
+    "engines": {
+        "vscode": "^1.35.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "xml",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    },
+    "publisher": "rafaelskate8rrpg"
+}

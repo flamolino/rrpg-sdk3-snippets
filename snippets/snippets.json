@@ -1,0 +1,286 @@
+{
+	"nova ficha sdk3": {
+		"prefix": "Novo Modelo de Ficha sdk3",
+		"body": [
+			"<?xml version='1.0' encoding='UTF-8'?>",
+			"<form formType='sheetTemplate' dataType='$1'",
+			"\ttitle='$2' name='$3'>",
+			"\n",
+			"</form>"
+		],
+		"description": "Cada modelo de ficha do SDK3 é um documento Lua Form (extensão ‘.lfm’) e toda vez que o usuário abre um personagem, o RRPG Firecast localiza o Lua Form adequado, cria uma nova instância e a exibe na tela."
+	},
+	"button sdk3": {
+		"prefix": "button sdk3",
+		"body": [
+			"<button left='$2' top='$3' text='$1' width='150'/>"
+		],
+		"description": "A tag/componente button representa um botão na interface."
+	},
+	"activityIndicator sdk3": {
+		"prefix": "activityIndicator sdk3",
+		"body": [
+			"<activityIndicator left='$1' top='$2' enabled='true'/>"
+		],
+		"description": "A tag/componente activityIndicator representa um controle que exibe uma animação na interface com o intuito de indicar ao usuário que alguma atividade está sendo feita, como um carregamento ou uma outra espera qualquer!"
+	},
+	"comboBox sdk3": {
+		"prefix": "comboBox sdk3",
+		"body": [
+			"<comboBox left='$2' top='$3' items='{$1}'/>"
+		],
+		"description": "A tag/componente comboBox representa uma caixa de seleção que permite o usuário selecionar um item entre vários."
+	},
+	"colorComboBox sdk3": {
+		"prefix": "colorComboBox sdk3",
+		"body": [
+			"<colorComboBox left='$1' top='$2'/>"
+		],
+		"description": "A tag/componente colorComboBox representa uma caixa de seleção que permite o usuário selecionar uma cor qualquer."
+	},
+	"checkBox sdk3": {
+		"prefix": "checkBox sdk3",
+		"body": [
+			"<checkBox left='$2' top='$3' text='$1'/>"
+		],
+		"description": "A tag/componente checkBox representa uma caixa de marcação na interface."
+	},
+	"dataLink sdk3": {
+		"prefix": "dataLink sdk3",
+		"body": [
+			"<dataLink field='$1'>\n",
+			"</datalink>"
+		],
+		"description": "A tag dataLink representa um componente não visual (não é exibido na interface) que monitora mudanças em um NodeDatabase."
+	},
+	"dataScopeBox sdk3": {
+		"prefix": "dataScopeBox sdk3",
+		"body": [
+			"<dataScopeBox $1/>\n",
+			"</dataScopeBox"
+		],
+		"description": "A tag/componente dataScopeBox funciona como a tag layout, porém permite definir em qual objeto Nodo seus controles salvarão/lerão os dados (NodeDatabase);\nApós definir o nodo escopo, todos os componentes visuais que estão dentro desta tag passarão a ler e salvar os dados neste nodo.\nSaiba mais sobre escopo de dados do NodeDatabase em Lua Form e NodeDatabase.\nAtenção: A tag popup não é capturada pelo escopo de dados definido pelo dataScopeBox."
+	},
+	"edit sdk3": {
+		"prefix": "edit sdk3",
+		"body": [
+			"<edit left='$1' top='$2'/>"
+		],
+		"description": "A tag/componente edit representa uma caixa de texto na interface. Um ótimo controle para permitir a entrada de dados!"
+	},
+	"event sdk3": {
+		"prefix": "event sdk3",
+		"body": [
+			"<event name='$1'>\n",
+			"</event>"
+		],
+		"description": "Esta tag especial serve para tratar um evento de uma tag/controle usando a linguagem de programação LUA (veja A linguagem de programação LUA).\n\tObservações:\nO corpo da tag contém código de programação LUA.\nEsta tag não cria nenhum controle.\nVocê deve colocar a tag event dentro da tag que deseja tratar o evento.\nImportante: Não deixe de ler as Orientações ao usar código LUA em um Lua Form."
+	},
+	"flowLayout sdk3": {
+		"prefix": "flowLayout sdk3",
+		"body": [
+			"<flowLayout left='$1' top='$2' width='$3' autoHeight='true' orientation='horizontal'>\n",
+			"</flowLayout>"
+		],
+		"description": "A tag/componente flowLayout organiza controles na interface de forma dinâmica. Excelente para criar interfaces que se adaptam a diferentes tamanhos de tela.\nOs componentes que estão dentro de um flowLayout são automaticamente posicionados de forma sequencial e arranjados em linhas quando não houver espaço na horizontal.\nObservação: Não é possível usar a propriedade 'align' nos controles filhos desta tag."
+	},
+	"flowLineBreak sdk3": {
+		"prefix": "flowLineBreak sdk3",
+		"body": [
+			"<flowLineBreak/>\n\t$1",
+			"<flowLineBreak/>"
+		],
+		"description": "A tag/componente flowLineBreak é um componente invisível e serve apenas para quebrar linha em um layout dinâmico (Ver Tag flowLayout).\nObservações:\nDeve ser usado junto com a Tag flowLayout.\nSe a orientação do flowLayout for 'vertical', esta tag cria uma nova coluna no layout."
+	},
+	"flowPart sdk3": {
+		"prefix": "flowPart sdk3",
+		"body": [
+			"<flowPart minWidth='$1' maxWidth='$2' height='$3'>\n",
+			"</flowPart>"
+		],
+		"description": "A tag/componente flowPart representa uma parte dinâmica de um layout dinâmico (Ver Tag flowLayout). É um controle similar à uma tag layout, mas com a possibilidade de definir uma largura dinâmica, isto é, um layout que muda sua largura de acordo com a necessidade.\nObservação: Deve ser usado junto com a Tag flowLayout."
+	},
+	"group sdk3": {
+		"prefix": "group sdk3",
+		"body": [
+			"<group>\n\t$1",
+			"</group>"
+		],
+		"description":	"Com a  tag group, o programador pode agrupar outras tags. Esta tag não faz nada além disso, não afeta a interface visual e nem a interpretação do Lua Form.\nNão há propriedades e nem atributos.\nÉ especialmente útil para usar com a tag import. Honestamente, sua única utilidade é essa hehehe =)."
+	},
+	"horzLine sdk3": {
+		"prefix": "horzLine sdk3",
+		"body": [
+			"<horzLine left='$1' top='$2' width='$3' strokeColor='$4'/>"
+		],
+		"description": "A tag/componente horzLine representa uma linha na horizontal com cores e espessura personalizada."
+	},
+	"form sdk3": {
+		"prefix": "form sdk3",
+		"body": [
+			"<form formType='sheetTemplate' dataType='$1'",
+			"\ttitle='$2' name='$3'>",
+			"\n",
+			"</form>"
+		],
+		"description": "A tag/componente form representa uma ficha, um formulário ou uma janela do plug-in.\nAs principais características do form são:\n\t• Para que alguma interface visual seja apresentada na tela do usuário, é necessário existir ao menos 1 form. Sem form, não há apresentação da interface.\n\t• Apenas os componentes que estão dentro de um form são apresentados na tela.\n\t• É possível existir um form dentro de outro form.\n\t• É possível definir um tema para um form e todos os componentes que estão dentro dele. Exemplo: Você quer que o form (e demais componentes) tenha aparência escura ou clara?\n\t• É possível associar um Nodo de um NodeDatabase (Ver NodeDatabase) a um form. Quando você faz isso, todos os componentes de edição (que estão dentro do form) passam a salvar os dados neste nodo.\n\t• Os modelos de ficha fazem isso! Mas você não precisa se preocupar com isso, pois o SDK 3 faz isso automaticamente para você ;)."
+	},
+	"image sdk3": {
+		"prefix": "image sdk3",
+		"body": [
+			"<image left='$2' top='$3' width='$4' height='$5' src='$1'/>"
+		],
+		"description": "A tag/componente image representa uma imagem na interface visual."
+	},
+	"imageCheckBox sdk3": {
+		"prefix": "imageCheckBox sdk3",
+		"body": [
+			"<imageCheckBox width='$3' align='$4' checkedImage='$1' uncheckedImage='$2'/>"
+		],
+		"description": "A tag/componente imageCheckBox representa uma caixa de marcação na interface no qual é possível personalizar a imagem apresentada quando a caixa está marcada e quando está desmarcada."
+	},
+	"import sdk3": {
+		"prefix": "import sdk3",
+		"body": [
+			"<import file='$1/>"
+		],
+		"description": "Com a  tag import, o programador pode importar/incluir um outro documento XML ao Lua Form, acarretando na substituição da tag pelo conteúdo do arquivo especificado.\nÉ especialmente útil para:\n\t• Organizar o documento Lua form. Exemplo: Quando o arquivo '.lfm' ficar grande, é interessante dividir ele em partes menores, cada parte em seu documento XML separado.\n\t• Reaproveitar código. Exemplo: Se você tiver templates ou styles que queira reaproveitar em outros Lua Forms, você pode criar um documento XML que contenha apenas o que queira reaproveitar e o importar nos Lua Forms."
+	},
+	"label sdk3": {
+		"prefix": "label sdk3",
+		"body": [
+			"<label left='$2' top='$3' text='$1'/>"
+		],
+		"description": "A tag/componente label representa um texto não editável na interface. Excelente para mostrar informações."
+	},
+	"layout sdk3": {
+		"prefix": "layout sdk3",
+		"body": [
+			"<layout left='$1' top='$2' width='$3' height='$4'>"
+		],
+		"description": "A tag/componente layout representa um componente visual “invisível”. Ele não apresenta nada na tela e é usado apenas para organizar outros componentes visuais.\nAs principais características do layout são:\n\t• Não apresentam nada na tela, são transparentes.\n\t• São ótimos para organizar e/ou agrupar outros componentes visuais.\n\n\nExemplo: Você pode adicionar 10 outros componentes dentro de um layout e alterar a posição de todos, ao mesmo tempo, alterando a apenas posição do layout.\n\n• As tags/controles que estão dentro de layout mas visualmente fora de seus limites (largura e altura do layout) não são desenhadas na tela."
+	},
+	"path sdk3": {
+		"prefix": "path sdk3",
+		"body": [
+			"<path align='client' margins='{$1}'",
+			"\t\tcolor='orange' data='$2'/>"
+		],
+		"description": "A tag/componente path representa uma forma geométrica/shape totalmente personalizada e vetorial. Todas as formas geométricas básicas podem ser criadas usando esta tag."
+	},
+	"popup sdk3": {
+		"prefix": "popup sdk3",
+		"body": [
+			"<popup name='$1' width='$2' height='$3' backOpacity='0.5'>\n\t$4",
+			"</popup>"
+		],
+		"description": "A tag/componente popup representa um componente visual que fica escondido na interface e é posteriormente apresentado, tomando a atenção para si, na forma de um popup."
+	},
+	"popupForm sdk3": {
+		"prefix": "popupForm sdk3",
+		"body": [
+			"<popupForm $1>\n\t$2",
+			"</popupForm>"
+		],
+		"description": "A tag/componente popupForm é uma especialização da tag form que contém propriedades próprias para exibir uma janela popup na interface do usuário.\nVocê pode usar esta tag como tag raiz de um arquivo LFM."
+	},
+	"progressBar sdk3": {
+		"prefix": "progressBar sdk3",
+		"body": [
+			"<progressBar color='$1' width='$2' top='$3' left='$4' value='$5' max='$6'/>"
+		],
+		"description": "A tag/componente progressBar representa uma barra de progresso/estado, ótimo para dar noção ao usuário do progresso de algo em um formato visual."
+	},
+	"radioButton sdk3": {
+		"prefix": "radioButton sdk3",
+		"body": [
+			"<radioButton text='$1' groupName='$2' field='$3' fieldValue='$4' top='$5' left='$6'/>"
+		],
+		"description": "A tag/componente radioButton representa uma caixa de marcação na interface que, quando usada em grupo, permite apenas uma esteja marcada por vez."
+	},
+	"recordList sdk3": {
+		"prefix": "recordList sdk3",
+		"body": [
+			"<recordList name='$1' field='$2' templateForm='$3'",
+			"\t\tleft='$4' top='$5' width='$6' autoHeight='true'/>"
+		],
+		"description": "A tag/componente recordList é uma lista de registros na interface. Usada em conjunto com um NodeDatabase, o controle apresenta um painel na interface para cada item/nodo filho de um campo.\nObservações:\n\t• O painel dos itens é customizado pelo programador.\n\t• O painel dos itens deve ser um form (ver Tag form) e é chamado de Template Form.\n\t• Você vai precisar de ao menos dois arquivos de extensão '.lfm': Um onde se encontra o recordList, e outro representando o painel item.\n\t• Cada item possui seu próprio objeto nodo, e cada painel de item é automaticamente ligado a seu escopo de dados."
+	},
+	"rectangle sdk3": {
+		"prefix": "rectangle sdk3",
+		"body": [
+			"<rectangle left='$1' top='$2' width='$3' height='$4' color='$5'/>"
+		],
+		"description": "A tag/componente rectangle representa um retângulo na interface o qual você pode personalizar cores, bordas e outros aspectos da forma."
+	},
+	"richEdit sdk3": {
+		"prefix": "richEdit sdk3",
+		"body": [
+			"<richEdit align='client' backgroundColor='$1' defaultFontColor='$2' field='$3'/>"
+		],
+		"description": "A tag/componente richEdit representa uma caixa de texto de múltiplas linhas com possibilidade de adicionar formatação, cores, alinhamentos, imagens, etc... Um ótimo controle para permitir a entrada de dados 'texto ricos'."
+	},
+	"script sdk3": {
+		"prefix": "script sdk3",
+		"body": [
+			"<script>\n\t$1",
+			"</script>"
+		],
+		"description": "Esta tag especial serve para definir um bloco de códigos LUA (veja A linguagem de programação LUA) que será executado quando uma nova instância do Lua Form for criada.\nObservações:\n\t• O corpo da tag contém código de programação LUA.\n\t• Esta tag não cria nenhum controle.\n\t• A ordem que a tag script foi definida no documento Lua Form importa! O código será executado logo após a criação da tag/controle que está acima, porém antes da criação da tag/controle que está abaixo. No momento exato em que o script é executado, a variável 'sheet' conterá valor nil e será preenchido num momento posterior.\nImportante: Não deixe de ler as Orientações ao usar código LUA em um Lua Form."
+	},
+	"scrollBox sdk3": {
+		"prefix": "scrollBox sdk3",
+		"body": [
+			"<scrollBox left='$1' top='$2' width='$3' height='$4'>\n\t$5",
+			"</scrollBox>"
+		],
+		"description": "A tag/componente scrollBox é um controle que adiciona barras de rolagem ao seu conteúdo, permitindo realizar 'scroll' nos componentes que estão dentro da caixa.\nEm dispositivos que possuem touch screen, permite também o gesto de 'pinça' para efetuar zoom do conteúdo.\nObservação: As barras de rolagem aparecem apenas for necessário, isto é, as dimensões do conteúdo for maior que as dimensões da tag scrollBox"
+	},
+	"style sdk3": {
+		"prefix": "style sdk3",
+		"body": [
+			"<style>\n\t$1",
+			"</style>"
+		],
+		"description": "Esta tag especial serve para definir um estilo em cascata, muito semelhante ao CSS no HTML. Um estilo em cascata é um bloco de códigos especiais que aplica valores à propriedades de 1 ou mais controles de uma vez só, em cascata.\nÉ especialmente útil para evitar retrabalho e para separar o formato do conteúdo principal do Lua Form.\nImportante: A sintaxe do estilo em cascata é muito semelhante ao do CSS, porém as propriedades disponíveis são diferentes."
+	},
+	"tab sdk3": {
+		"prefix": "tab sdk3",
+		"body": [
+			"<tab title='$1'>\n\t$2",
+			"</tab>"
+		],
+		"description": "A tag/componente tab representa uma aba dentro de um grupo de abas (Ver Tag tabControl). Excelente para dividir controles em duas ou mais abas.\nIMPORTANTE: Para usar abas, você deve usar uma Tag tabControl."
+	},
+	"tabControl sdk3": {
+		"prefix": "tabControl sdk3",
+		"body": [
+			"<tabControl align='client'>\n\t$1",
+			"</tabControl>"
+		],
+		"description": "A tag/componente tabControl representa um controle que agrupa tabs/abas. Excelente para dividir controles em duas ou mais abas."
+	},
+	"template sdk3": {
+		"prefix": "template sdk3",
+		"body": [
+			"<template name='$1'>\n\t$2",
+			"</template>"
+		],
+		"description": "Com esta tag, o programador pode criar seu próprio conjunto de tags do Lua Form que sempre que forem usada, serão substituídas pelo conteúdo do template.\nObservação: Esta tag não representa um componente do lua form e todas as tags que estão dentro do template só existirão de fato quando o modelo for invocado."
+	},
+	"textEditor sdk3": {
+		"prefix": "textEditor sdk3",
+		"body": [
+			"<textEditor left='$2' top='$3' width='$4' height='$5' text='$1'/>"
+		],
+		"description": "A tag/componente textEditor representa uma caixa de texto de múltiplas linhas. Um ótimo controle para permitir a entrada de dados texto com quebra de linhas."
+	},
+	"timer sdk3": {
+		"prefix": "timer sdk3",
+		"body": [
+			"<timer interval='$1' onTimer='$2'/>"
+		],
+		"description": "A tag timer representa um componente não visual (não é exibido na interface) que executa determinado código LUA de tempo em tempo."
+	}
+	
+}
