@@ -49,7 +49,7 @@
 		"prefix": "dataLink sdk3",
 		"body": [
 			"<dataLink field='$1'>\n",
-			"</datalink>"
+			"</dataLink>"
 		],
 		"description": "A tag dataLink representa um componente não visual (não é exibido na interface) que monitora mudanças em um NodeDatabase."
 	},
